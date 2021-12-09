@@ -7,11 +7,14 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
   try {
     await sendgrid.send({
       to: {
-        email: "contato@q-rico.com.br",
-        name: "Q-Rico",
+        email: `${process.env.TO_EMAIL_CONTACT}`,
+        name: `${process.env.TO_NAME_CONTACT}`,
       },
-      from: "contato@q-rico.com.br",
-      subject: `Q-Rico - Contato - ${req.body.name}`,
+      from: {
+        email: `${process.env.FROM_EMAIL_CONTACT}`,
+        name: `${process.env.FROM_NAME_CONTACT}`,
+      },
+      subject: `Q-Rico | Contato - ${req.body.name}`,
       html: `<div>
         <p>Dados de contato:</p>
         <p>Nome: ${req.body.name}</p>
