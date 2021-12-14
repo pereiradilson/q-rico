@@ -47,16 +47,6 @@ export default function About() {
                   <FiInstagram className="mr-2" /> Instagram
                 </a>
               </li>
-              <li className="py-3">
-                <a
-                  href="https://www.facebook.com/q.rico.investidor"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex flex-row items-center font-semibold leading-none text-white py-4 px-10 bg-blue-600 rounded hover:bg-blue-500 focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 focus:outline-none"
-                >
-                  <FiFacebook className="mr-2" /> Facebook
-                </a>
-              </li>
             </ul>
           </div>
         </div>

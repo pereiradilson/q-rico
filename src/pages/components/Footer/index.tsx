@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col justify-center">
           <Image
-            src="/0001.jpg"
+            src="/0001.svg"
             alt="Q-Rico"
             width="100"
             height="73"

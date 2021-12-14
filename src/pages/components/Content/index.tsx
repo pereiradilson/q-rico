@@ -13,7 +13,7 @@ export default function Content() {
     <section className="flex h-screen border-b-2 border-light-blue-500 border-opacity-25">
       <div className="container mx-auto bg-custom-dark flex flex-col items-center justify-center px-6">
         <Image
-          src="/0001.jpg"
+          src="/0001.svg"
           alt="Q-Rico"
           width="474"
           height="335"
