@@ -3,11 +3,12 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: false,
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        "custom-dark": "#111214",
+        body: "var(--color-body)",
+        background: "var(--color-background)",
       },
     },
   },

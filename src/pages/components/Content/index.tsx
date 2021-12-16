@@ -1,7 +1,12 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import { FiMail } from "react-icons/fi";
 
+import ThemeToggle from "../ThemeToggle";
+
 export default function Content() {
+  const { resolvedTheme } = useTheme();
+
   function scrollToContact() {
     window.scrollTo({
       top: document.body.scrollHeight,
@@ -12,14 +17,27 @@ export default function Content() {
   return (
     <section className="flex h-screen border-b-2 border-light-blue-500 border-opacity-25">
       <div className="container mx-auto bg-custom-dark flex flex-col items-center justify-center px-6">
-        <Image
-          src="/0001.svg"
-          alt="Q-Rico"
-          width="474"
-          height="335"
-          className="object-contain md:object-scale-down"
-          data-aos="zoom-in"
-        />
+        <ThemeToggle />
+
+        {(resolvedTheme === "light" && (
+          <Image
+            src="/logo_light.svg"
+            alt="Q-Rico"
+            width="474"
+            height="335"
+            className="object-contain md:object-scale-down"
+            data-aos="zoom-in"
+          />
+        )) || (
+          <Image
+            src="/logo_dark.svg"
+            alt="Q-Rico"
+            width="474"
+            height="335"
+            className="object-contain md:object-scale-down"
+            data-aos="zoom-in"
+          />
+        )}
 
         <h1 className="text-center text-white text-2xl md:text-4xl my-3">
           Construindo sua independência <br />
