@@ -88,7 +88,7 @@ export default function Contact() {
 
       <section
         id="contact"
-        className="flex border-b-2 border-light-blue-500 border-opacity-25 bg-gradient-to-b from-custom-dark via-gray-900 to-custom-dark"
+        className="flex border-b-2 border-gray-400 dark:border-light-blue-500 border-opacity-25"
       >
         <div className="container mx-auto py-24 md:py-36">
           <div className="flex flex-col justify-center items-center px-4 md:px-6">
@@ -100,7 +100,7 @@ export default function Contact() {
             </p>
             <p
               data-aos="zoom-in"
-              className="font-bold text-base md:text-2xl text-white text-justify py-6"
+              className="font-bold md:text-2xl text-black dark:text-white text-justify py-6"
             >
               Preencha os campos abaixo e entraremos em contato com você.
             </p>
@@ -110,20 +110,20 @@ export default function Contact() {
             >
               <input
                 type="text"
-                className="w-full h-12 rounded-lg px-4 text-lg focus:ring-blue-600 mb-4"
+                className="w-full h-12 rounded-lg px-4 bg-gray-200 dark:bg-white text-lg focus:ring-blue-600 mb-4"
                 placeholder="Nome"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
-                className="w-full h-12 rounded-lg px-4 text-lg focus:ring-blue-600 mb-4"
+                className="w-full h-12 rounded-lg px-4 bg-gray-200 dark:bg-white text-lg focus:ring-blue-600 mb-4"
                 placeholder="E-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button
-                className="w-full flex flex-row items-center justify-center font-semibold leading-none text-dark py-4 px-10 bg-yellow-500 rounded hover:bg-yellow-400 focus:ring-2 focus:ring-offset-2 focus:ring-yellow-700 focus:outline-none transition disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full flex flex-row items-center justify-center font-semibold leading-none text-black py-4 px-10 bg-yellow-500 rounded hover:bg-yellow-400 focus:ring-2 focus:ring-offset-2 focus:ring-yellow-700 focus:outline-none transition disabled:opacity-50 disabled:cursor-not-allowed"
                 onClick={handleFormSubmit}
                 disabled={button}
               >

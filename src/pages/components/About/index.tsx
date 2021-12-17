@@ -2,17 +2,17 @@ import { FiYoutube, FiInstagram, FiFacebook } from "react-icons/fi";
 
 export default function About() {
   return (
-    <section className="flex border-b-2 border-light-blue-500 border-opacity-25 bg-gradient-to-b from-custom-dark via-gray-900 to-custom-dark">
+    <section className="flex border-b-2 border-gray-400 dark:border-light-blue-500 border-opacity-25 bg-gradient-to-b from-gray-50 dark:from-custom-dark via-gray-100 dark:via-gray-900 to-gray-50 dark:to-custom-dark">
       <div className="container mx-auto py-24 md:py-36 px-4 md:px-16">
         <div className="flex flex-col items-center justify-center md:flex-row">
           <div
             data-aos="fade-up"
             className="flex flex-col flex-1 max-w-2xl mx-auto px-4"
           >
-            <h1 className="text-white text-3xl md:text-5xl">
+            <h1 className="text-black dark:text-white text-3xl md:text-5xl">
               Seja muito bem-vindo
             </h1>
-            <p className="text-gray-400 text-1xl md:text-2xl text-justify mt-9">
+            <p className="text-gray-500 dark:text-gray-400 text-1xl md:text-2xl text-justify mt-9">
               Eu sou Wilson Rosa e conheci o mercado financeiro em 2018, de lá
               para cá realizei vários cursos e passei o ano de 2019 realizando
               um MBA em Private Bank (especialização no mercado financeiro)

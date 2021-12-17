@@ -1,17 +1,17 @@
 export default function Information() {
   return (
-    <section className="flex border-b-2 border-light-blue-500 border-opacity-25 bg-gradient-to-b from-custom-dark via-gray-900 to-custom-dark">
+    <section className="flex border-b-2 border-gray-400 dark:border-light-blue-500 border-opacity-25 bg-gradient-to-b from-gray-50 dark:from-custom-dark via-gray-100 dark:via-gray-900 to-gray-50 dark:to-custom-dark">
       <div className="container mx-auto py-24 md:py-36">
         <div className="flex flex-col gap-6 md:flex-row items-center justify-between px-4 md:px-6">
           <div
             data-aos="zoom-in"
             className="flex flex-col flex-1 overflow-hidden rounded-lg"
           >
-            <div className="px-6 py-4 bg-white border-b border-gray-200 font-bold">
+            <div className="px-6 py-4 bg-gray-300 dark:bg-white text-black border-b border-gray-200 font-bold">
               Você quer aprender a investir no mercado de ações?
             </div>
 
-            <div className="p-6 bg-white text-justify italic">
+            <div className="p-6 bg-gray-200 dark:bg-white text-black text-justify italic">
               O curso Q-Rico Mercado de Ações, vai ensinar os conceitos do que
               são Ações, como negociá-las, passaremos pela Análise
               Fundamentalista, Avaliação de Ações e Análise Técnica. E por fim,

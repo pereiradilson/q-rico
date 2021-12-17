@@ -7,7 +7,13 @@ export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+
+    if (theme === "system") {
+      setTheme("dark");
+    }
+  }, [theme, setTheme]);
 
   if (!mounted) {
     return null;
@@ -19,11 +25,15 @@ export default function ThemeToggle() {
 
   return (
     <button
-      className="focus:outline-none"
+      className="flex justify-center items-center w-8 p-1 rounded bg-gray-800 dark:bg-yellow-300 focus:outline-none"
       aria-label="Theme Toggle"
       onClick={() => setTheme(isDark() ? "light" : "dark")}
     >
-      {isDark() ? <BiSun size={20} /> : <BiMoon size={20} />}
+      {isDark() ? (
+        <BiSun size={20} color="#000" />
+      ) : (
+        <BiMoon size={20} color="#fff" />
+      )}
     </button>
   );
 }
