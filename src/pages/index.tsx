@@ -10,6 +10,7 @@ import Card from "./components/Card";
 import Information from "./components/Information";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Cookie from "./components/Cookie";
 
 export default function Home() {
   useEffect(() => {
@@ -24,6 +25,8 @@ export default function Home() {
       <Head>
         <title>Q-Rico | Construindo sua independência Financeira.</title>
       </Head>
+
+      <Cookie />
 
       <Content />
 
