@@ -2,7 +2,7 @@ import { FaChartLine, FaChartPie, FaDonate } from "react-icons/fa";
 
 export default function Card() {
   return (
-    <section className="flex border-b-2 border-light-blue-500 border-opacity-25">
+    <section className="flex border-b-2 border-gray-400 dark:border-light-blue-500 border-opacity-25">
       <div className="container mx-auto py-24 md:py-36">
         <div className="flex flex-col gap-4 md:flex-row items-center justify-between px-4 md:px-6">
           <div
